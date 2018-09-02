@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'UsersController@index');
+Route::post('insertdata','UsersController@insertdata');
+Route::post('updatedata','UsersController@updatedata');
+Route::post('deletedata','UsersController@deletedata');
